@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="s-maxage=3600">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="cache.js"></script>
+    <script src="main.js"></script>
+
+    <title>Nuestra Boda</title>
+    <link rel="stylesheet" href="styles/normalize.css?v2">
+    <link rel="stylesheet" href="styles/estilos.css?v2">
+    <link rel="stylesheet" href="styles/mediaQueries.css?v2">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+
+
+        <nav class="nav container" id="nav">
+             
+            <img class="nav__logo" src="assets/vectores/logoHEADER.svg" alt=""> 
+
+            <div class="nav__icons">
+                <a href="#nav">
+                    <svg class="nav__open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40"
+                        height="40">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="nav__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40"
+                        height="40">
+                        <path d="M18 6L6 18M6 6l12 12" />
+                    </svg>
+                </a>
+            </div>
+
+
+
+
+            <ul class="nav__items">
+
+                <li class="nav__links">
+                    <a class="nav__link" href="#temporizador">¿Cuánto falta?</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#donde">Ubicación</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#fotos">Fotos</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#playlist">Playlist</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#album">Álbum</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#correo">Confirmación</a>
+                </li>
+
+            </ul>
+
+
+            <img class="header__logo" src="assets/vectores/logo.svg" alt="">
+
+            <img class="header__arrow" src="assets/vectores/arrow.svg" alt="">
+
+
+        </nav>
+
+
+
+        <!-- <img class="header__wave" src="assets/vectores/wave.svg" alt=""> -->
+
+    </header>
+
+    <main>
+
+        <section class="music" data-aos="fade-up">
+            <div class="music__container">
+            <h3 class="music__title">Escuchemos juntos esta canción</h3>
+            <div class="music__icons">
+                <i id="rewind" class="fas fa-backward"></i>
+                <i id="playPause" class="fas fa-play"></i>
+                <i id="forward" class="fas fa-forward"></i>
+            </div>
+            
+        
+            <audio id="audio" src="assets/musica.mp3"></audio>
+        </div>
+        </section>
+
+
+        <section class="temporizador" id="temporizador" data-aos="fade-up"
+        data-aos-duration="2000">
+            <h3 class="title__tempo">No queda nada...</h3> 
+            <div class="timer">
+                <div class="timer-item">
+                    <p class="timer-value" id="days">0</p>
+                    <p class="timer-label">Días</p>
+                </div>
+                <div class="timer-item">
+                    <p class="timer-value" id="hours">0</p>
+                    <p class="timer-label">Horas</p>
+                </div>
+                <div class="timer-item">
+                    <p class="timer-value" id="minutes">0</p>
+                    <p class="timer-label">Minutos</p>
+                </div>
+                <div class="timer-item">
+                    <p class="timer-value" id="seconds">0</p>
+                    <p class="timer-label">Segundos</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="historia" data-aos="fade-up"
+        data-aos-duration="2000">
+
+            <h2 class="text__title">Nuestra <span class="text__span">Boda</span> </h2>
+
+            <p class="historia__paragrap">
+                "Dijimos que no sería fácil y lo logramos... <br>
+                Una propuesta, un Sí y una decisión que tomamos juntos. <br> Tan sólo podemos decir que nuestra vida en
+                estos momentos se encuentra completa y estamos listos para compartir el resto de nuestros días
+                juntos."
+
+            </p>
+
+            <img class="historia__wave" src="assets/vectores/wave1.svg" alt="">
+
+        </section>
+
+
+        <section class="fotos" id="fotos">
+            <a class="fotos__picture" href="assets/imagenes/fotos/uno.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/uno.webp" alt="">
+            </a>
+            <a class="fotos__picture" href="assets/imagenes/fotos/dos.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/dos.webp" alt="">
+            </a>
+            <a class="fotos__picture" href="assets/imagenes/fotos/tres.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/tres.webp" alt="">
+            </a>
+            <a class="fotos__picture" href="assets/imagenes/fotos/cuatro.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/cuatro.webp" alt="">
+            </a>
+            <a class="fotos__picture" href="assets/imagenes/fotos/cinco.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/cinco.webp" alt="">
+            </a>
+            <a class="fotos__picture" href="assets/imagenes/fotos/seis.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/seis.webp" alt="">
+            </a>
+            <a class="fotos__picture" href="assets/imagenes/fotos/siete.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/siete.webp" alt="">
+            </a>
+            <a class="fotos__picture" href="assets/imagenes/fotos/ocho.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/ocho.webp" alt="">
+            </a>
+            <a class="fotos__picture" href="assets/imagenes/fotos/nueve.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/nueve.webp" alt="">
+            </a>
+            <a class="fotos__picture" href="assets/imagenes/fotos/diez.webp" data-fancybox="gallery">
+                <img class="fotos__img" src="assets/imagenes/fotos/diez.webp" alt="">
+            </a>
+
+        </section>
+
+
+        <section class="donde" data-aos="fade-up"
+        data-aos-duration="3000">
+
+            <div class="donde__container"  id="donde" >
+                <img class="donde__icon" src="assets/vectores/anillos.svg" alt="">
+                <h3 class="donde__title" >Ceremonia y Celebración</h3>
+                <p class="donde__paragraph">Te invitamos que nos acompañes a este gran paso que daremos juntos, el día 28 de Diciembre del 2024 a las 21:00hs en Salón de Eventos "Sueños Cumplidos" Av. Soberania Nacional, Libertador Gral San Martín, Jujuy</p>
+                <img class="donde__img" src="assets/imagenes/iglesia.webp" alt="">
+                <a class="boton__cta" href="https://maps.app.goo.gl/HyqCrVuAncYn6yQR9">
+                    <img class="donde__ubicacion" src="assets/vectores/ubicacion.svg" alt=""> ¿Cómo llegar?</a>
+                   
+            </div>
+<!-- 
+            <div class="donde__container">
+                <img class="donde__icon" src="assets/vectores/fiesta.svg" alt="">
+                <h3 class="donde__title">Fiesta</h3>
+                <p class="donde__paragraph">Te esperamos para celebrar el dia 11 de Octubre del 2024 a las 21:00hs en
+                    "Finca La Herminia", Los Tipales, Avenida Libertador 1.100</p>
+                <img class="donde__img" src="assets/imagenes/salon.webp"alt="">
+            
+                    <button class="boton__cta">
+                        <img class="donde__ubicacion" src="assets/vectores/ubicacion.svg" alt="">
+                        ¿Cómo llegar?</button>
+            </div> -->
+
+        </section>
+
+<!-- 
+        <section class="dresscode" data-aos="zoom-out-right ">
+
+            <h3 class="dresscode__title">Dresscode</h3>
+
+            <h5 class="dresscode__subtitle">Formal y Elegante</h5>
+
+            <div class="dresscode__icons">
+                <img class="dresscode__icon" src="assets/vectores/dresscodeMUJER.svg" alt="">
+                <img class="dresscode__icon" src="assets/vectores/dresscodeVARON.svg" alt="">
+
+            </div>
+
+            <h5 class="dresscode__subtitle">Se reserva el color blanco para la novia</h5>
+
+
+           
+
+
+            <button class="boton__cta" id="showImage" data-aos="fade-up">Ver Ejemplo</button>
+
+            <div id="lightbox" class="lightbox">
+                <span id="closeButton" class="close-button">cerrar</span>
+                <img src="assets/imagenes/drescode.webp" alt="Imagen" />
+            </div>
+          
+        </section> -->
+
+
+        <section class="dresscode contenedor block glow" id="dresscode">
+
+            <h3 class="dresscode__title">Dresscode</h3>
+            <div class="dresscode__icons">
+                <img class="dresscode__icon" src="assets/vectores/dresscodeMUJER.svg" alt="">
+                <img class="dresscode__icon" src="assets/vectores/dresscodeVARON.svg" alt="">
+
+            </div>
+            <h5 class="dresscode__subtitle">Casual</h5>
+            <!-- <p class="dresscode__note">Por favor no asistir con vestimenta en tonos Blancos</p> -->
+            <img class="dresscode__img" src="assets/vectores/dresscodeVECTOR.svg" alt="">
+
+            <button class="boton__cta" id="showImage" data-aos="fade-up">Ver Ejemplo</button>
+
+            <div id="lightbox" class="lightbox">
+                <span id="closeButton" class="close-button">cerrar</span>
+                <img src="assets/imagenes/drescode.webp" alt="Imagen" />
+            </div>
+            <img class="dresscode__wave" src="assets/vectores/wave2.svg" alt="">
+        </section>
+
+
+        <section class="testigos" data-aos="fade-up"
+        data-aos-duration="2000">
+
+            <h4 class="testigos__title">Nuestros Testigos</h4>
+
+            <div class="testigo">
+
+                <div class="testigos__container">
+                    <h5 class="testigo__name">Ana María Avendaño</h5>
+                    <!-- <img class="testigos__picture" src="assets/imagenes/mamaNovia.webp" alt=""> -->
+                    
+                </div>
+
+                <div class="testigos__container">
+                    <h5 class="testigo__name">Sandro González</h5>
+                    <!-- <img class="testigos__picture" src="assets/imagenes/papaNovia.webp" alt=""> -->
+                    
+                </div>
+
+                <div class="testigos__container">
+                    <h5 class="testigo__name">Gabriela Romero</h5>
+                    <!-- <img class="testigos__picture" src="assets/imagenes/mamaNovio.webp" alt=""> -->
+                    
+                </div>
+
+                <div class="testigos__container">
+                    <h5 class="testigo__name">Alberto Centeno</h5>
+                    <!-- <img class="testigos__picture" src="assets/imagenes/papaNovio.webp" alt=""> -->
+                
+                </div>
+
+            </div>
+        </section>
+
+<!-- 
+        <section class="testigos" data-aos="fade-up"
+        data-aos-duration="2000">
+
+            <h4 class="testigos__title">Nuestros Testigos</h4>
+
+            <div class="testigo">
+
+                <div class="testigos__container">
+                    <h5 class="testigo__name">Néstor Elizondo</h5>
+                  
+                    <h6 class="testigo__pie">Amigo del novio</h6>
+                </div>
+
+                <div class="testigos__container">
+                    <h5 class="testigo__name">Cecilia Vázquez</h5>
+                    
+                    <h6 class="testigo__pie">Hermana de la novia</h6>
+                </div>
+
+        
+
+            </div>
+        </section> -->
+
+
+        <section class="insta"  id="album" data-aos="fade-up"
+        data-aos-duration="3000">
+
+            <div class="insta__container">
+
+            <img class="insta__icon" src="assets/vectores/insta.svg" alt="">
+
+            <h4 class="insta__title">Compartinos tus fotos</h4>
+
+            <h5 class="insta__subtitle">Puedes compartir tus fotos con el siguiente hashtag:</h5>
+
+            <h5 class="insta__hashtag">#BodaSandrayRoberto</h5>
+
+            <h5 class="insta__paragraph" id="instanone">También puedes subirlas a nuestro propio álbum digital</h5>
+
+            
+             <a class="boton__cta" href="https://photos.app.goo.gl/TUBaKJ6PNhbT2Ckd9">
+                <img class="insta__albumICON" src="assets/imagenes/album.webp" alt="">
+                Subir fotos</a>
+            </div> 
+        </section>
+
+
+        <section class="itinerarios" data-aos="fade-up"
+        data-aos-duration="3000">
+            <h3 class="itinerario__aviso">Sábado 28 de Diciembre 2024</h3>
+            <div class="itinerario">
+
+
+                <div class="line">
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+
+                   
+                    <article class="itinerario__item item2">
+                        <img class="itinerario__icon icon2" src="assets/imagenes/iconos/iconoINVITADOS.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Ingreso al Salón</h6>
+                            <h6 class="itinerario__name itinerario__name2">21:00hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item3">
+                        <img class="itinerario__icon icon3" src="assets/imagenes/iconos/iconoCIVIL.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">Ceremonia Civil</h6>
+                            <h6 class="itinerario__name itinerario__name2">22:00hs</h6>
+                        </div>
+                    </article>
+
+             
+                    <article class="itinerario__item item6">
+                        <img class="itinerario__icon icon6" src="assets/imagenes/iconos/iconoCENA.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Cena</h6>
+                            <h6 class="itinerario__name itinerario__name2">23:00hs</h6>
+                        </div>
+                    </article>
+                    <article class="itinerario__item item7">
+                        <img class="itinerario__icon icon7" src="assets/imagenes/iconos/iconoINICIOfiesta.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">Inicio de la fiesta</h6>
+                            <h6 class="itinerario__name itinerario__name2">00:00hs</h6>
+                        </div>
+                    </article>
+                    <article class="itinerario__item item8">
+                        <img class="itinerario__icon icon8" src="assets/imagenes/iconos/iconoFIN.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Cierre de la fiesta</h6>
+                            <h6 class="itinerario__name itinerario__name2">05:00hs</h6>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="regalos" data-aos="fade-up"
+        data-aos-duration="1000">
+
+            <div class="regalos__container">
+
+                <img class="regalos__icon" src="assets/vectores/regalos.svg" alt="">
+
+                <h4 class="regalos__title">Regalos</h4>
+
+                <p class="parrafo--regalos">"Dicen que se necesita 3 cosas para ser feliz <br>
+                    -Salud <br>
+                    -Dinero <br>
+                    -Amor <br>
+                    Por suerte estamos muy Sanos y Amor nos sobra. <br>
+                    Si querés, podés ayudarnos a tener lo que falta"
+                </p>
+
+                <button id="mostrarBoton" class="boton__cta">Ver datos bancarios</button>
+                <div id="textoDesplegable" class="escondido regalos__data">
+    
+                    <h6 class="regalo__date">Alias:</h6>
+                    <p class="name__alias" id="alias">Sandu1982</p>
+                    <button class="alias__button" onclick="copyText()">
+                        <img class="copiar__icon" src="assets/vectores/copiar.svg" alt="">
+                        Copiar Alias</button>
+                    <div class="copy-message" id="copyMessage">¡Copiado!</div>
+    
+    
+                    <div class="lineRegalos"></div>
+    
+    
+                    <h6 class="regalo__date">Alias:</h6>
+                    <p class="name__cbu" id="cbuAlias">ROBERTOAVE.1973</p>
+                    <button class="cbu__button" onclick="copyCbuText()">
+                        <img class="copiar__icon" src="assets/vectores/copiar.svg" alt="">
+                        Copiar Alias</button>
+                    <div class="copy-message" id="copyCbuMessage" style="display: none;">¡Copiado!</div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="playlist" data-aos="fade-up"
+        data-aos-duration="2000">
+            <div class="playlist__container">
+                <img class="playlist__img" src="assets/vectores/musica.svg" alt="">
+                <h4 class="title title--playlist" id="playlist">No existe fiesta sin buena música</h4>
+
+                <h4 class="subtitle subtitle--playlist">¿Qué música crees que no debería faltar? <br> Ayúdanos a
+                    elegir...</h4>
+            </div>
+
+            <!-- ---- form ----- -->
+            <div class="playlist__mensaje" id="formContainer">
+                <label class="playlist__label" for="userName">Nombre y Apellido:</label>
+                <input class="playlist__input" type="text" id="userName" placeholder="Tu nombre y apellido">
+
+                <label class="playlist__label playlist__label2" 
+                    for="whatsappMessage">Recomendación:</label>
+                <input class="playlist__input" type="text" id="whatsappMessage"
+                    placeholder="Escribe tu tema recomendado aquí">
+
+                <!-- Botones para enviar el mensaje -->
+                <button class="boton__cta boton__cta2" id="recomendarPlay1">Enviar recomendación</button>
+                <button class="boton__cta boton__cta5" id="recomendarPlay2">Enviar a Pablo</button>
+            </div>
+
+            <img class="playlist__wave" src="assets/vectores/wave3.svg" alt="">
+        </section>
+<!-- 
+        <section class="invitados" id="invitados">
+
+            <div class="invitados__contenedor">
+                <div id="busqueda">
+                    <h2 class="invitados__title">Buscador de invitados</h2>
+                    <label class="busqueda__name" for="nombreBusqueda">Ingresa tu nombre y apellido <br>ó familia + apellido </label>
+                    <input class="busqueda__input" type="text" id="nombreBusqueda" placeholder="Ingrese su nombre">
+        
+                    <button class="boton__cta" onclick="buscarMesa()">Buscar invitado</button>
+                </div>
+
+                <div id="resultado">
+
+                </div>
+            </div>
+        </section>   -->
+
+        <section class="confirmacion contenedor block glow" data-aos="fade-up"   id="correo">
+            <div class="confirmacion__container">
+                <h4 class="parrafo parrafo--confirmacion" data-aos="fade-right">
+                    Recordá que tenes hasta el día 18 de Diciembre del 2024 para confirmar tu
+                    presencia <br>
+                </h4>
+                <div id="asistencia">
+                    <div class="asistencia__radios">
+                        <label class="asistencia__radio">
+                            <input class="assistencia_" type="radio" name="attendanceOption" value="SI ASISTIRÉ"> SI ASISTIRÉ
+                        </label>
+                        <label class="asistencia__radio">
+                            <input class="assistencia_" type="radio" name="attendanceOption" value="NO ASISTIRÉ"> NO ASISTIRÉ
+                        </label>
+                    </div>
+                    <br>
+                    <div class="asistencia__datos">
+                        <label class="asistencia__label" for="userFullName">Nombre y Apellido:</label>
+                        <input class="input__text" type="text" id="userFullName" placeholder="Tu nombre y apellido" required>
+                        <br>
+                        <label class="asistencia__label asistencia__label2" for="customMessage">Mensaje:</label>
+                        <textarea class="input__text input__text2" id="customMessage" placeholder="Mensaje opcional"></textarea>
+                        <br>
+                        <button class="boton__cta boton__cta3" id="confirmar1">
+                            <img class="whatsapp__icon" src="assets/vectores/whatsapp_redondo.svg" alt="">Enviar mensaje</button>
+                        <button class="boton__cta boton__cta3" id="confirmar2"> <img class="whatsapp__icon" src="assets/vectores/whatsapp_redondo.svg" alt="">Enviar mensaje</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="frase" data-aos="fade-up"
+        data-aos-duration="3000">
+
+            <div class="frase__container">
+                <img class="frase__icon" src="assets/vectores/apostrofe.svg" alt="">
+                <p class="frase__paragraph">
+                   Este Camino Continuará... 
+                </p>
+                <img class="frase__icon2" src="assets/vectores/apostrofe.svg" alt="">
+            </div>
+        </section>
+
+
+        <section class="footer" >
+
+            <img class="footer__logo" src="assets/vectores/logofooter.svg" alt="">
+
+        </section>
+
+
+        <section class="info" id="info">
+            <h6 class="info__text">
+                Página creada por "Luno Digitales" para la boda de Sandra y Roberto - 2024 &copy todos los derechos
+                reservados
+                - <br>
+                <a class="info__link" href="https://www.luno.net.ar/">
+                    www.luno.net.ar
+                </a>
+            </h6>
+
+        </section>
+
+
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="script/script.js?v2"></script>
+
+</body>
+
+</html>
